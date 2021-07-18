@@ -1,0 +1,438 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1 Feb, 2021, 8:09:03 PM
+    Author     : PRATIK
+*/
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 10px;
+  color: #272727;
+  
+}
+body{
+    background-attachment: fixed;
+}
+.wrap{
+    background-color: #000 !important;
+    color: #ffc600 !important;
+}
+.background{
+    background: url(camera.jpg)no-repeat center center fixed
+}
+.navbar{
+    /*background: url(back2.jpg)no-repeat center center fixed;*/
+    border: none;
+    padding: 2% 0;
+    font-size: 1.2em;
+    position: relative;
+}
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #ffc600;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.navbar-brand{
+    min-height: 55px;
+    padding: 0 15px 5px;
+}
+.navbar-default .navbar-nav li a{
+    color: #ffc600;
+    padding-right: 20px;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a .active{
+    color: #fff;
+    text-decoration: none;
+}
+
+.mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.yellow.lighten-4{
+    background-color: #ffc600;
+    float: right;
+}
+.fa-1x {
+font-size: 1.5rem;
+}
+
+.dark-blue-text {
+color: #0A38F5;
+}
+button {
+  border: 0;
+  padding: 10px 20px;
+}
+.menu ul {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.menu a {
+  background: #ffc600;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  color: #272727;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.dis{
+    color: black;
+    font-size: 8.5rem;
+    text-align: center;
+    width: 100%;
+}
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+    font-size: 12rem;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.text{
+    font-size: 14px;
+}
+.info{
+    padding: 10px 40px;
+}
+.fa {
+    padding: 20px;
+    font-size: 18px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-instagram {
+    background: #125def;
+    color: #ffffff;
+}
+.gallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5rem
+}
+
+.gallery h2 {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  color: black;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.gallery h2:before, .gallery h2:after {
+  display: block;
+  content: '';
+  height: 10px;
+  background: linear-gradient(to var(--direction, left), #ffc600, transparent);
+}
+
+.gallery h2:after {
+  --direction: right;
+}
+
+.login-page {
+  padding: 8% 0 0;
+  margin: auto;
+  border: 1px #000;
+  border-radius: 2px;
+}
+form {
+  position: relative;
+  background: #ffffff;
+  margin: 0 auto 100px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+form input {
+  font-family: "Roboto", sans-serif;
+  background: #f2f2f2;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.btn{
+    background: #ffc600;
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 1.5rem;
+}
+.can{
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 1.5rem;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+/* The Close Button */
+.cl {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.cl:hover,
+.cl:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.logo{
+    display: none;
+    color: #ffffff;
+}
+
+form select{
+    margin: 10px 0px;
+    background: #f2f2f2;
+}
+footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    position: fixed;
+}
+.d-flex{
+    display: flex;
+}
+[aria-controls="menu-list"] {
+  display: none;
+}
+
+@media(min-width: 1201px){
+    .col-xl-2{
+        width: 16.67%;
+    }
+    .col-xl-3{
+        width: 25%;
+    }
+    .col-xl-5{
+        width: 41.67%;
+    }
+    .d-xl-flex{
+        display: flex;
+    }
+    form{
+        width: 70%;
+    }
+    .login-page{
+        width: 70%;
+    }
+    .btn{
+        width: 50%;
+        margin-right: 10px;
+    }
+    .can{
+        width: 50%;
+    }
+}
+@media (min-width: 768px){
+    .navbar-expand-md .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        font-size: 2rem;
+    }
+    .logo{
+        display: flex;
+    }
+}
+@media(max-width: 1200px){
+    .col-lg-2{
+        width: 16.67%;
+    }
+    .col-lg-3{
+        width: 25%;
+    }
+    .col-lg-5{
+        width: 41.67%;
+    }
+    .d-lg-flex{
+        display: flex;
+    }
+    form{
+        width: 80%;
+    }
+    .login-page{
+        width: 80%;
+    }
+    .btn{
+        width: 50%;
+        margin-right: 10px;
+    }
+    .can{
+        width: 50%;
+    }
+    .text-copy{
+        font-size: 10rem;
+    }
+}
+@media(max-width: 800px){
+    .col-md-6{
+        width: 50%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+    .d-md-block{
+        display: block;
+    }
+    .d-md-flex{
+        display: flex;
+    }
+    .login-page{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;;
+    }
+    .can{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .text-copy{
+        font-size: 8rem;
+    }
+    .modal-content{
+        width: 70%;
+    }
+}
+@media(max-width: 480px){
+    .col-sm-6{
+        width: 50%;
+    }
+    .col-sm-12{
+        width: 100%;
+    }
+    .d-sm-block{
+        display: block;
+    }
+    .login-page{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;;
+    }
+    .can{
+        width: 100%;
+    }
+    .modal-content{
+        width: 100%;
+    }
+    .tick{
+        width: 20%;
+    }
+    .text-copy{
+        font-size: 6rem;
+    }
+    .d-sm-none{
+        display: none;
+    }
+}

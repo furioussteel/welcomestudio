@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Welcome Studio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="login-page">
+            <form method="post">
+                <h1><center>Registration for booking</center></h1>
+                <label for="usr">Name:</label>
+                <input type="text" required>
+                <label for="usr">Mobile number:</label>
+                <input type="tel" required>
+                <label for="sel1">Type of booking:</label>
+                <select class="form-control" id="sel1">
+                    <option>Marriage</option>
+                    <option>Upanayan</option>
+                    <option>Annaprashan(First rice ceremony)</option>
+                    <option>Birthday celebration</option>
+                    <option>Inauguration ceremony</option>
+                    <option>Meeting</option>
+                </select>
+                <label for="date">Date of booking:</label>
+                <div class="d-lg-flex d-xl-flex d-md-block d-sm-block">
+                    <input type="date">to
+                    <input type="date">
+                </div>
+                <label for="usr">Address:</label>
+                <input type="text" required>
+                <label for="usr">Email:</label>
+                <input type="email" required>
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+                <div class="d-xl-flex d-lg-flex d-md-block d-sm-block">
+                    <button type="submit" class="btn" id="mybtn" data-toggle="modal"><b>Submit</b></button>
+                    <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="cl">&times;</span>
+                            <div class="d-flex thank">
+                                <img class="tick" src="tick.gif">
+                                <p><b>Thank you for registering. Welcome studio will soon reach out to you.</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="cancel" href= "registration.html" class="can"><b>Cancel</b></button>
+                </div>
+            </form>
+            </div>
+            
+        <footer class="container-fluid text-center">
+            <h1 class="text-center">Contact Us</h1>
+            <div class="row">
+                
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div>
+                            <i class="fa fa-map-marker"></i>
+                            <p>D 20/2 Munshi Ghat, Dashaswamedh, Varanasi, Uttar Pradesh 221001</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <p>+91-9415623841<br>+91-9935300550</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <p>welcomestudio2013@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="social-links">
+                        <a href="https://www.instagram.com/sanjay.bappa/"><i class="fa fa-instagram"></i>Social Media</a>
+                        </div>
+                    </div>
+            </div>
+        </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="style.js"></script>
+    </body>
+</html>
